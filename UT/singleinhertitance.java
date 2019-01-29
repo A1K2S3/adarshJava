@@ -1,11 +1,13 @@
+import java.lang.*;
+
 class person{
 
      void details(String name, int age){
 
-          String n = name;
-          int a = age;
-          System.out.println("Name = " + this.name);
-          System.out.println("Age of "+ this.name + " is " + this.age);
+          String n = this.name;
+          int a = this.age;
+          System.out.println("Name = " + n);
+          System.out.println("Age of "+ this.name + " is " + a);
           
      }
      
@@ -16,8 +18,8 @@ class employee extends person{
 
           String d = designation;
           int s = sal;
-          System.out.println("Designation of "+ this.name +" is "+ this.d);
-          System.out.println("Salary of "+ this.name + " is " + this.sal);
+          System.out.println("Designation of "+ n +" is "+ d);
+          System.out.println("Salary of "+ n + " is " + sal);
           
      }
      
@@ -27,9 +29,9 @@ class singleinhertitance extends employee{
 
      public static void main( String args[] ) {
           
-          singleinheritance Adarsh = new singleinheritance();
-          Adarsh.details("Adarsh",18);
-          Adarsh.emp("Manager",30000);
+          singleinheritance obj = new singleinheritance();
+          obj.details("Adarsh",18);
+          obj.emp("Manager",30000);
           
      }
      

@@ -6,10 +6,10 @@ class dowhilelogical{
           int i = 0;
           do {
                
-               i+=2;
+               i += 2;
                System.out.println(i);
                
-          } while (i < 50 && i > 0);
+          } while (i < 50 && i % 2 == 0);
           
      }
      
