@@ -6,22 +6,19 @@ class rate{
 }
 class banks extends rate{
 	String objname;
-	banks(String name){
-		this.objname = name;
-	}
-	void rateofI(){
+	void rateofI(String name){
 		System.out.println("Rate of Interest in " + objname + " is " + super.interest);
 	}
 	public static void main( String args[] ) {
 
-		banks BOB = new banks("BOB");
-		banks SBI = new banks("SBI");
+		banks BOB = new banks();
+		banks SBI = new banks();
 
 		BOB.rateofI(11.0);
-		BOB.rateofI();
+		BOB.rateofI("BOB");
 
 		SBI.rateofI(12.0);
-		SBI.rateofI();
+		SBI.rateofI("SBI");
 		
 	}
 }
